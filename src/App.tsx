@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ReactDOM } from "react";
+import { styled } from "styled-components";
+import Circle from "./Circle";
+
+const Wrapper = styled.div`
+  display: flex;
+  height: 100px;
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Circle bgColor="teal"></Circle>
+      <Circle bgColor="tomato"></Circle>
+      <Circle bgColor="teal"></Circle>
     </div>
   );
 }
