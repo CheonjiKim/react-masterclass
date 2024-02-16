@@ -76,9 +76,9 @@ function Coins() {
       </Header>
       <CoinsList>
         {coins.map((coin) => (
-          <Link to={`/${coin.id}`}>
-            <Coin key={coin.id}>{coin.name} &rarr;</Coin>
-          </Link>
+          <Coin key={coin.id}>
+            <Link to={`/${coin.id}`}>{coin.name} &rarr;</Link>
+          </Coin>
         ))}
       </CoinsList>
     </Container>
